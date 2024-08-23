@@ -1,0 +1,18 @@
+<!-- <p>show-producto works!</p> -->
+
+<table class="table table-stripped">
+    <thead>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Precio Unitario</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of productoList$|async">
+            <td>{{item.id}}</td>
+            <td>{{item.nombre}}</td>
+            <td>{{item.nombre}}</td>
+            <td>{{item.precio}}</td>
+        </tr>
+    </tbody>
+</table>
